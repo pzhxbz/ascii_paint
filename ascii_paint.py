@@ -27,7 +27,7 @@ class AsciiPaint:
             img = self.__img
         else:
             img = transform.resize(self.__img, output_size)
-
+        output_size = img.shape
         output_format = ''
         for i in range(output_size[0]):
             output_format += format_pre
